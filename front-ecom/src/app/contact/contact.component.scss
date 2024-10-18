@@ -1,0 +1,147 @@
+/* Main Banner */
+.page-heading {
+  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://up.yimg.com/ib/th?id=OIP.Gn0W3tS9V-Jbukg6nMOX_wHaEo&pid=Api&rs=1&c=1&qlt=95&w=189&h=118') center center no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.page-heading h2 {
+  color: #fff;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.page-heading span {
+  color: white;
+  font-size: 18px;
+}
+
+/* Contact Us Section */
+.contact-us {
+  padding: 50px 0;
+}
+
+#map {
+  margin-bottom: 30px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.section-heading h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.section-heading span {
+  font-size: 16px;
+  color: #888;
+  display: block;
+  margin-bottom: 40px;
+}
+
+form#contact {
+  display: block;
+}
+
+form#contact input, form#contact textarea {
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+form#contact button {
+  padding: 10px 20px;
+  border: none;
+  background-color: rgb(19, 23, 42);
+  color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Subscribe Section */
+.subscribe {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+.subscribe .section-heading {
+  margin-bottom: 30px;
+}
+
+.subscribe .section-heading h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+}
+
+.subscribe .section-heading span {
+  font-size: 16px;
+  color: #888;
+}
+
+form#subscribe input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+form#subscribe button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+/* Contact Info Section */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+ul li span {
+  font-weight: 700;
+  color: #555;
+}
+
+ul li a {
+  color: #f9c933;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+ul li a:hover {
+  color: #333;
+}
+
+/* Social Media Links */
+ul li a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+ul li a:hover {
+  color: #f9c933;
+  text-decoration: underline;
+}

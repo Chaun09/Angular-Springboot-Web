@@ -1,0 +1,38 @@
+.product {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  float: left;
+  width: 25%;
+  box-sizing: border-box;
+}
+.product img {
+  width: 100%;
+}
+.product .title {
+  font-weight: bold;
+}
+.product .price {
+  color: #008000;
+}
+.product .old-price {
+  text-decoration: line-through;
+  color: #808080;
+}
+.product .rating {
+  color: #ffc107;
+}
+.product .stock {
+  color: #28a745;
+}
+.product .button {
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.product .button:hover {
+  background-color: #218838;
+}

@@ -1,0 +1,48 @@
+
+.category-panel {
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    padding: 50px; /* Tạo khoảng cách phía trên và dưới */
+}
+
+.category-panel .title {
+    text-align: left; /* Căn trái tiêu đề */
+    margin-bottom: 20px;
+}
+
+
+.category-panel-slider {
+    display: flex;
+    justify-content: center; /* Căn giữa nội dung */
+    flex-wrap: wrap; /* Cho phép nội dung tự xuống dòng nếu không đủ chỗ */
+    gap: 20px; /* Khoảng cách giữa các item */
+}
+
+.cate-box {
+    display: flex;
+    flex-direction: column; /* Đặt hình ảnh và văn bản theo cột */
+    align-items: center; /* Căn giữa hình ảnh và văn bản */
+    text-align: center;
+    padding: 40px; /* Khoảng cách padding xung quanh mỗi phần tử */
+    background-color: #f0f0f0; /* Màu nền cho các ô category */
+    border-radius: 10px; /* Bo góc nhẹ */
+    transition: transform 0.3s ease;
+    width: 130px;
+     /* Hiệu ứng khi hover */
+}
+
+.cate-box img {
+    width: 100px; /* Kích thước hình ảnh */
+    margin-bottom: 10px;
+     /* Khoảng cách giữa hình và chữ */
+}
+
+.cate-box span {
+    font-size: 16px;
+    color: #333;
+}
+
+.cate-box:hover {
+    transform: scale(1.05); /* Hiệu ứng phóng to nhẹ khi hover */
+}

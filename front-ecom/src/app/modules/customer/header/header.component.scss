@@ -1,0 +1,46 @@
+header{
+    background-color: rgb(19, 23, 42);
+    color: rgb(173, 178, 203);
+    position: sticky;
+    
+  
+
+}
+.navbar {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.navbar .container {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.navbar .container .navbar-brand {
+    color: rgb(173, 178, 203);
+}
+
+.navbar .container .navbar-nav .nav-link {
+    color: rgb(173, 178, 203);
+    border-radius: 18px;
+    padding: 8px 16px;
+    margin-right: 23px;
+}
+
+.navbar .container .navbar-nav .nav-link.active {
+    background-color: rgb(127, 68, 255) !important;
+    color: white !important;
+}
+
+.navbar-nav1 {
+  margin-right: auto; /* Push the navbar items to the right */
+}
+
+.nav {
+  display: flex; /* Align items horizontally */
+  list-style: none; /* Remove default list styles */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.nav-item {
+  margin-left: 15px; /* Space between items */
+}

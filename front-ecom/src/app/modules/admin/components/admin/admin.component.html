@@ -1,0 +1,21 @@
+<div>
+  <h2>Customer List</h2>
+  <div>
+    <table>
+      <thead>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Role</th>
+        <th>Action</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let customer of customers">
+          <td>{{ customer.name }}</td>
+          <td>{{ customer.email }}</td>
+          <td>{{ customer.userRole }}</td>
+          <td><button (click)="delete(customer.id)">Xóa</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

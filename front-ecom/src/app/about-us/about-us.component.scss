@@ -1,0 +1,318 @@
+/* General Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Page Heading */
+.page-heading {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://up.yimg.com/ib/th?id=OIP.Gn0W3tS9V-Jbukg6nMOX_wHaEo&pid=Api&rs=1&c=1&qlt=95&w=189&h=118') center center no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.page-heading h2 {
+  color: #fff;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.page-heading span {
+  color: white;
+  font-size: 18px;
+}
+
+/* About Us Section */
+.about-us {
+  padding: 100px 0;
+  background-color: #fff;
+}
+
+.about-us .left-image img {
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.about-us .right-content {
+  padding-left: 30px;
+}
+
+.about-us h4 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about-us p,
+.about-us span {
+  color: #777;
+  font-size: 16px;
+}
+
+.about-us .quote {
+  margin: 20px 0;
+  font-style: italic;
+  color: #333;
+}
+
+.about-us .quote i {
+  font-size: 32px;
+  color: rgb(19, 23, 42);
+  margin-right: 10px;
+}
+
+.about-us ul {
+  margin-top: 20px;
+}
+
+.about-us ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.about-us ul li a {
+  font-size: 18px;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.about-us ul li a:hover {
+  color: white;
+  background-color: rgb(19, 23, 42);
+}
+
+/* Our Team Section */
+.our-team {
+  padding: 100px 0;
+  background-color: #f9f9f9;
+}
+
+.our-team .section-heading h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.our-team .section-heading span {
+  color: #777;
+  font-size: 18px;
+}
+
+.our-team .team-item {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.our-team .thumb {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.our-team .thumb img {
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.our-team .thumb:hover img {
+  transform: scale(1.1);
+}
+
+.our-team .hover-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-team .thumb:hover .hover-effect {
+  display: flex;
+}
+
+.our-team .hover-effect ul {
+  list-style: none;
+}
+
+.our-team .hover-effect ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.our-team .hover-effect ul li a {
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.our-team .down-content h4 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 15px;
+  color: #333;
+}
+
+.our-team .down-content span {
+  color: #777;
+  font-size: 16px;
+}
+
+/* Our Services Section */
+.our-services {
+  padding: 100px 0;
+  background-color: #fff;
+}
+
+.our-services .service-item {
+  text-align: center;
+  margin-top: 30px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.our-services .service-item h4 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.our-services .service-item p {
+  color: #777;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.our-services .service-item img {
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.our-services .service-item:hover {
+  background-color: rgb(19, 23, 42);
+  color: #fff;
+}
+
+.our-services .service-item:hover h4,
+.our-services .service-item:hover p {
+  color: #fff;
+}
+
+/* Subscribe Section */
+.subscribe {
+  padding: 100px 0;
+  background-color: #333;
+  color: #fff;
+}
+
+.subscribe .section-heading h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #f9c933;
+}
+
+.subscribe .section-heading span {
+  color: #ddd;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.subscribe form {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.subscribe form input[type="text"] {
+  padding: 12px 20px;
+  width: 100%;
+  border: 1px solid #777;
+  background-color: #fff;
+  border-radius: 30px;
+  margin-right: 10px;
+  color: #333;
+}
+
+.subscribe form button {
+  padding: 12px 30px;
+  background-color: #f9c933;
+  color: #333;
+  border: none;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.subscribe form button:hover {
+  background-color: #fff;
+  color: #f9c933;
+}
+
+/* Footer Info Styling */
+.subscribe .col-6 ul {
+  list-style: none;
+  margin-top: 30px;
+}
+
+.subscribe .col-6 ul li {
+  margin-bottom: 15px;
+}
+
+.subscribe .col-6 ul li span,
+.subscribe .col-6 ul li a {
+  color: #f9c933;
+}
+
+.subscribe .col-6 ul li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Social Media Icons */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+ul li {
+  margin: 0 10px;
+}
+
+ul li a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 18px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+ul li a:hover {
+  background-color: #333; /* Hover effect changes color */
+  transform: scale(1.1); /* Slightly enlarges icon on hover */
+  color: #f9c933; /* Icon color changes on hover */
+}
+
+ul li a i {
+  transition: color 0.3s ease;
+}
