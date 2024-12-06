@@ -113,6 +113,17 @@
                           >
                             <small class="text-danger">Password is >= 8</small>
                           </div>
+                          <div
+                            *ngIf="
+                              signUpForm.get('password')?.hasError('pattern')
+                            "
+                          >
+                            <small class="text-danger"
+                              >Password have at least one uppercase, one
+                              lowercase, one number and one special
+                              character</small
+                            >
+                          </div>
                         </div>
                       </div>
 
@@ -127,9 +138,11 @@
                             <label
                               class="form-check-label"
                               for="flexCheckDefault"
-                              >I agree with <span>Terms</span> and
-                              <span>Privacy</span></label
-                            >
+                              >I agree with
+                              <a [routerLink]="['/term']"
+                                ><span>Terms</span> and <span>Privacy</span></a
+                              >
+                            </label>
                           </div>
                         </div>
                       </div>

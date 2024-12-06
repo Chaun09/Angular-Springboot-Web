@@ -8,23 +8,23 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:4200")
-@RequestMapping("/{api_prefix}")
+@RequestMapping("/{api_prefix}/customer")
 @RequiredArgsConstructor
 public class CustomerController {
     private final CustomerService customerService;
 
 
-    @GetMapping("/show_all_customer")
+    @GetMapping("/show-all")
     public ResponseEntity<?> showAllCustomer(){
         return customerService.showAllCustomer();
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/get/{id}")
     public ResponseEntity<?> showCustomer(@PathVariable Long id){
         return customerService.showCustomerById(id);
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/delete/{id}")
     public void deleteCustomerById(@PathVariable Long id){
         customerService.deleteCustomerById(id);
     }

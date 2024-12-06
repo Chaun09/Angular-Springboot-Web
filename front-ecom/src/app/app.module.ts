@@ -19,6 +19,7 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactComponent } from './contact/contact.component';
 import { MidFooterComponent } from "./modules/customer/mid-footer/mid-footer.component";
+import { TermConditionsComponent } from './term-conditions/term-conditions.component';
 
 
 
@@ -36,7 +37,8 @@ import { MidFooterComponent } from "./modules/customer/mid-footer/mid-footer.com
     LoadingPageComponent,
     ProductDetailComponent,
     AboutUsComponent,
-    ContactComponent
+    ContactComponent,
+    TermConditionsComponent
   ],
   imports: [
     FormsModule,

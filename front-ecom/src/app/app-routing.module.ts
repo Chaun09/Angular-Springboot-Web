@@ -8,6 +8,7 @@ import { LoadingPageComponent } from './loading-page/loading-page.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactComponent } from './contact/contact.component';
+import { TermConditionsComponent } from './term-conditions/term-conditions.component';
 
 
 
@@ -19,7 +20,8 @@ const routes: Routes = [
   { path: "loading", component: LoadingPageComponent },
   { path: "detail/:id", component: ProductDetailComponent },
   { path: "about-us", component: AboutUsComponent },
-  { path: "contact", component: ContactComponent }
+  { path: "contact", component: ContactComponent },
+  { path: "term", component: TermConditionsComponent }
 
 ];
 

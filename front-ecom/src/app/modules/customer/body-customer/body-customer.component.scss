@@ -170,6 +170,10 @@ textarea.input {
   border-bottom: 0px;
 }
 
+.product{
+  margin-left: 10px;
+}
+
 .input-number .qty-down {
   right: 0;
   bottom: 0;
@@ -857,11 +861,12 @@ textarea.input {
 
 .product {
   position: relative;
-  margin: 15px 0px;
+  margin: 15px 5px;
   -webkit-box-shadow: 0px 0px 0px 0px #E4E7ED, 0px 0px 0px 1px #E4E7ED;
   box-shadow: 0px 0px 0px 0px #E4E7ED, 0px 0px 0px 1px #E4E7ED;
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
+  // border: 1px solid black;
 }
 
 .product:hover {

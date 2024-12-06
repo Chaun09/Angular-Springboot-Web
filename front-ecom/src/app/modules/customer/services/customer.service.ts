@@ -7,13 +7,17 @@ import { Observable } from 'rxjs';
 })
 export class CustomerService {
 
-  private baseUrl = 'http://localhost:8080/api';
+  private baseUrl = 'http://localhost:8080/api/product';
+  private categoryUrl = 'http://localhost:8080/api/category'
 
   constructor(private http: HttpClient) { }
   showAllProducts(): Observable<any> {
-    return this.http.get<any>(`${this.baseUrl}/show_all_product`);
+    return this.http.get<any>(`${this.baseUrl}/show-all`);
   }
   productDetail(id: number) {
-    return this.http.get<any>(`${this.baseUrl}/show_product_by_id/${id}`);
+    return this.http.get<any>(`${this.baseUrl}/show-by-id/${id}`);
+  }
+  showAllCategory(): Observable<any> {
+    return this.http.get<any>(`${this.categoryUrl}/show-all`);
   }
 }

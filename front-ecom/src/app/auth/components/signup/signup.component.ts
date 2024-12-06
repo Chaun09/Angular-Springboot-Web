@@ -1,6 +1,6 @@
 import { AuthService } from './../../services/auth/auth.service';
 import { Component } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
 
@@ -15,12 +15,13 @@ export class SignupComponent {
 
   signUpForm: FormGroup;
 
-  constructor(private fb: FormBuilder, private authService: AuthService, private router: Router) {
+  constructor(private authService: AuthService, private router: Router) {
     // Đảm bảo form được khởi tạo đúng cách
     this.signUpForm = new FormGroup({
       name: new FormControl('', [Validators.required, Validators.minLength(3)]),
       email: new FormControl('', [Validators.required, Validators.email]),
-      password: new FormControl('', [Validators.required, Validators.minLength(8)])
+      password: new FormControl('', [Validators.required, Validators.minLength(8), Validators.pattern(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/)])
+
     });
   }
 
@@ -43,9 +44,7 @@ export class SignupComponent {
     }
   }
 
-  login() {
-    this.router.navigate(['/login']);
-  }
+
 
 
 

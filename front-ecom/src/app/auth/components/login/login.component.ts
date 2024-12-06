@@ -3,7 +3,7 @@ import { FormGroup } from '@angular/forms';
 import { FormControl, Validators } from '@angular/forms';
 import { AuthService } from '../../services/auth/auth.service';
 import { Router } from '@angular/router';
-import { FormBuilder } from '@angular/forms';
+
 
 @Component({
   selector: 'app-login',
@@ -14,7 +14,7 @@ export class LoginComponent {
   loginForm: FormGroup;
 
   constructor(
-    private fb: FormBuilder,
+
     private authService: AuthService,
     private router: Router
   ) {
@@ -29,7 +29,7 @@ export class LoginComponent {
 
   onSubmit() {
     if (this.loginForm.valid) {
-      this.authService.signUp(this.loginForm.value).subscribe({
+      this.authService.login(this.loginForm.value).subscribe({
         next: () => {
           this.router.navigate(['/loading']);
           alert('Đăng nhập thành công')

@@ -37,16 +37,16 @@ export class ProductDetailComponent implements OnInit {
       }
     );
   }
-  addToCart() {
-    const cartItem = {
-      productId: this.productId,
-      quantity: this.quantity,
-      productName: this.product.name,
-      productPrice: this.product.newPrice
-    };
-    console.log('Add to cart:', cartItem);
-    // Bạn có thể sử dụng service hoặc lưu giỏ hàng trong local storage ở đây.
-  }
+  // addToCart() {
+  //   const cartItem = {
+  //     productId: this.productId,
+  //     quantity: this.quantity,
+  //     productName: this.product.name,
+  //     productPrice: this.product.newPrice
+  //   };
+  //   console.log('Add to cart:', cartItem);
+  //   // Bạn có thể sử dụng service hoặc lưu giỏ hàng trong local storage ở đây.
+  // }
 
 
 

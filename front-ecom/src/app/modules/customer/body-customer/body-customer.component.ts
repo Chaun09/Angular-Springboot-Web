@@ -1,7 +1,7 @@
 import { NgFor } from '@angular/common';
 import { CustomerService } from './../services/customer.service';
 import { Component } from '@angular/core';
-import { Router, RouterLink } from '@angular/router';
+import { RouterLink } from '@angular/router';
 
 
 @Component({
@@ -21,7 +21,7 @@ export class BodyCustomerComponent {
   isLoading: boolean = true;
   errorMessage: string = '';
 
-  constructor(private CustomerService: CustomerService, private router: Router) { }
+  constructor(private CustomerService: CustomerService) { }
 
   ngOnInit(): void {
 
@@ -36,7 +36,7 @@ export class BodyCustomerComponent {
       }
     });
   }
-  
+
 
 
 

@@ -7,33 +7,33 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:4200")
-@RequestMapping("/{api_prefix}")
+@RequestMapping("/{api_prefix}/product")
 @RequiredArgsConstructor
 public class ProductController {
 
     private final ProducService producService;
 
-    @GetMapping("/show_all_product")
+    @GetMapping("/show-all")
     public ResponseEntity<?> showAllProduct(){
         return producService.showAllProduct();
     }
-    @GetMapping("/show_product_by_id/{id}")
+    @GetMapping("/show-by-id/{id}")
     public ResponseEntity<?> showProduct(@PathVariable Long id){
         return producService.showProductById(id);
 
     }
-    @PostMapping("/add_product")
+    @PostMapping("/add")
     public ResponseEntity<?> addProduct(@RequestBody ProductDto productDto){
         return producService.addProduct(productDto);
 
     }
-    @DeleteMapping("/delete_product/{id}")
+    @DeleteMapping("/delete/{id}")
     public ResponseEntity<?> deleteProduct(@PathVariable Long id){
         return producService.deleteProduct(id);
 
     }
 
-    @PutMapping("/update_product/{id}")
+    @PutMapping("/update/{id}")
     public ResponseEntity<?> updateProduct(@PathVariable Long id, @RequestBody ProductDto productDto){
         return producService.updateProduct(id, productDto);
     }

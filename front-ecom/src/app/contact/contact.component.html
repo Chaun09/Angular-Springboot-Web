@@ -21,12 +21,7 @@
         <div id="map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.0137489160466!2d105.85572197503032!3d20.992085980648064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac13d572ca03%3A0xecdbf6a04a71bcd6!2zQ8O0bmcgVHkgVG5oaCBHaeG6o2kgUGjDoXAgQ8O0bmcgTmdo4buHIEVsZWRldm8!5e0!3m2!1svi!2s!4v1729071793787!5m2!1svi!2s"
-            width="100%"
-            height="422px"
-            frameborder="0"
-            style="border: 30px"
-            allowfullscreen
-          ></iframe>
+            width="100%" height="422px" frameborder="0" style="border: 30px" allowfullscreen></iframe>
 
           <!-- You can simply copy and paste "Embed a map" code from Google Maps for any location. -->
         </div>
@@ -34,52 +29,45 @@
       <div class="col-lg-6">
         <div class="section-heading">
           <h2>Say Hello. Don't Be Shy!</h2>
-          <span
-            >Details to details is what makes Hexashop different from the other
-            themes.</span
-          >
+          <span>Details to details is what makes Hexashop different from the other
+            themes.</span>
         </div>
-        <form id="contact" action="" method="post">
+        <form id="contact" [formGroup]="contactSendForm" (ngSubmit)="onSubmit()">
           <div class="row">
             <div class="col-lg-6">
               <fieldset>
-                <input
-                  name="name"
-                  type="text"
-                  id="name"
-                  placeholder="Your name"
-                  required=""
-                />
+                <input name="name" class="form-control" type="text" formControlName="name" id="name"
+                  placeholder="Your name" />
               </fieldset>
+              <div *ngIf="contactSendForm.get('name')?.hasError('required')">
+                <small class="text-danger">Name is required</small>
+              </div>
             </div>
+
             <div class="col-lg-6">
               <fieldset>
-                <input
-                  name="email"
-                  type="text"
-                  id="email"
-                  placeholder="Your email"
-                  required=""
-                />
+                <input name="email" class="form-control" formControlName="email" type="email" id="email"
+                  placeholder="Your email" />
               </fieldset>
+              <div *ngIf="contactSendForm.get('email')?.hasError('required')">
+                <small class="text-danger">Email is required</small>
+              </div>
             </div>
             <div class="col-lg-12">
               <fieldset>
-                <textarea
-                  name="message"
-                  rows="6"
-                  id="message"
-                  placeholder="Your message"
-                  required=""
-                ></textarea>
+                <textarea name="message" class="form-control" formControlName="message" rows="6" id="message"
+                  placeholder="Your message"></textarea>
               </fieldset>
+              <div *ngIf="contactSendForm.get('message')?.hasError('required')">
+                <small class="text-danger">Message is required</small>
+              </div>
             </div>
             <div class="col-lg-12">
-              <fieldset>
-                <button type="submit" id="form-submit" class="main-dark-button">
-                  <i class="fa fa-paper-plane"></i>
-                </button>
-              </fieldset>
+
+              <button type="submit" id="form-submit" class="main-dark-button">
+                <i class="fa fa-paper-plane"></i>
+              </button>
+
             </div>
           </div>
         </form>
@@ -96,34 +84,20 @@
       <div class="col-lg-8">
         <div class="section-heading">
           <h2>By Subscribing To Our Newsletter You Can Get 30% Off</h2>
-          <span
-            >Details to details is what makes Hexashop different from the other
-            themes.</span
-          >
+          <span>Details to details is what makes Hexashop different from the other
+            themes.</span>
         </div>
         <form id="subscribe" action="" method="get">
           <div class="row">
             <div class="col-lg-5">
               <fieldset>
-                <input
-                  name="name"
-                  type="text"
-                  id="name"
-                  placeholder="Your Name"
-                  required=""
-                />
+                <input name="name" type="text" id="name" placeholder="Your Name" required="" />
               </fieldset>
             </div>
             <div class="col-lg-5">
               <fieldset>
-                <input
-                  name="email"
-                  type="text"
-                  id="email"
-                  pattern="[^ @]*@[^ @]*"
-                  placeholder="Your Email Address"
-                  required=""
-                />
+                <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email Address"
+                  required="" />
               </fieldset>
             </div>
             <div class="col-lg-2">
@@ -141,9 +115,7 @@
           <div class="col-6">
             <ul>
               <li>
-                Store Location:<br /><span
-                  >Sunny Isles Beach, FL 33160, United States</span
-                >
+                Store Location:<br /><span>Sunny Isles Beach, FL 33160, United States</span>
               </li>
               <li>Phone:<br /><span>010-020-0340</span></li>
               <li>Office Location:<br /><span>North Miami Beach</span></li>
