@@ -3,28 +3,19 @@ import { CustomerService } from './../services/customer.service';
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
-
 @Component({
   selector: 'app-body-customer',
   standalone: true,
-  imports: [
-    NgFor,
-    RouterLink
-  ],
+  imports: [NgFor, RouterLink],
   templateUrl: './body-customer.component.html',
-  styleUrl: './body-customer.component.scss'
+  styleUrl: './body-customer.component.scss',
 })
 export class BodyCustomerComponent {
   products: any[] = [];
-
-
   isLoading: boolean = true;
   errorMessage: string = '';
-
-  constructor(private CustomerService: CustomerService) { }
-
+  constructor(private CustomerService: CustomerService) {}
   ngOnInit(): void {
-
     this.CustomerService.showAllProducts().subscribe({
       next: (data) => {
         this.products = data;
@@ -33,14 +24,7 @@ export class BodyCustomerComponent {
       error: (error) => {
         this.errorMessage = 'Error fetching customer data';
         console.log(error);
-      }
+      },
     });
   }
-
-
-
-
-
-
-
 }

@@ -24,6 +24,5 @@ public class UserDto {
     private String username;
     @Email(message = "Sai kieu email")
     private String email;
-
     private UserRole userRole;
 }

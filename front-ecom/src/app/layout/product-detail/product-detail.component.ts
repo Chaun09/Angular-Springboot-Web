@@ -1,21 +1,22 @@
-import { CustomerService } from './../modules/customer/services/customer.service';
+import { CustomerService } from '../../modules/customer/services/customer.service';
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { OnInit } from '@angular/core';
 
-
 @Component({
   selector: 'app-product-detail',
   templateUrl: './product-detail.component.html',
-  styleUrl: './product-detail.component.scss'
+  styleUrl: './product-detail.component.scss',
 })
 export class ProductDetailComponent implements OnInit {
-
   quantity: number | undefined;
   productId: number | undefined;
-  product: any;  // Thay bằng model của bạn nếu có
+  product: any; // Thay bằng model của bạn nếu có
 
-  constructor(private route: ActivatedRoute, private CustomerService: CustomerService) { }
+  constructor(
+    private route: ActivatedRoute,
+    private CustomerService: CustomerService
+  ) {}
 
   ngOnInit(): void {
     // Lấy ID từ route
@@ -47,7 +48,4 @@ export class ProductDetailComponent implements OnInit {
   //   console.log('Add to cart:', cartItem);
   //   // Bạn có thể sử dụng service hoặc lưu giỏ hàng trong local storage ở đây.
   // }
-
-
-
 }

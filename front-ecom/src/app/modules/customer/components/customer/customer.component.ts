@@ -1,12 +1,10 @@
-
 import { Component } from '@angular/core';
-import { FooterComponent } from '../../footer/footer.component';
-import { HeaderComponent } from '../../header/header.component';
-import { MidFooterComponent } from '../../mid-footer/mid-footer.component';
-import { MidHeadFooterComponent } from '../../mid-head-footer/mid-head-footer.component';
-import { MidHeaderComponent } from '../../mid-header/mid-header.component';
-import { BodyCustomerComponent } from "../../body-customer/body-customer.component";
-
+import { FooterComponent } from '../../../../component/footer/footer.component';
+import { HeaderComponent } from '../../../../component/header/header.component';
+import { MidFooterComponent } from '../../../../component/mid-footer/mid-footer.component';
+import { MidHeadFooterComponent } from '../../../../component/mid-head-footer/mid-head-footer.component';
+import { MidHeaderComponent } from '../../../../component/mid-header/mid-header.component';
+import { BodyCustomerComponent } from '../../body-customer/body-customer.component';
 
 @Component({
   selector: 'app-customer',
@@ -17,11 +15,9 @@ import { BodyCustomerComponent } from "../../body-customer/body-customer.compone
     MidFooterComponent,
     MidHeadFooterComponent,
     MidHeaderComponent,
-    BodyCustomerComponent
-],
+    BodyCustomerComponent,
+  ],
   templateUrl: './customer.component.html',
-  styleUrl: './customer.component.scss'
+  styleUrl: './customer.component.scss',
 })
-export class CustomerComponent {
-
-}
+export class CustomerComponent {}

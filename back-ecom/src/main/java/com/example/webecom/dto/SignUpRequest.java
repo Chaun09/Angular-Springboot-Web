@@ -11,15 +11,13 @@ import lombok.*;
 @Setter
 
 public class SignUpRequest {
-//    @NotBlank(message = "Username is required")
+    @NotBlank(message = "Username is required")
     private String name;
-
-//    @NotBlank(message = "Password is required")
+    @NotBlank(message = "Password is required")
     private String password;
 //    @NotBlank(message = "Password is required")
     private String again_password;
-
-//    @Email(message = "Email should be valid")
-//    @NotBlank(message = "Email is required")
+    @Email(message = "Email should be valid")
+    @NotBlank(message = "Email is required")
     private String email;
 }

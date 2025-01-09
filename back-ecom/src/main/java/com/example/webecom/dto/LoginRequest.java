@@ -11,7 +11,6 @@ import lombok.*;
 @Setter
 
 public class LoginRequest {
-
     @NotBlank(message = "Password is required")
     private String password;
     @NotBlank(message = "Email is required")

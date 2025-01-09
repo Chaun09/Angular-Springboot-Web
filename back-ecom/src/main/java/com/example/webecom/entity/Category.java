@@ -19,5 +19,4 @@ public class Category {
     private String name;
     private String file_pic;
     private String description;
-
 }

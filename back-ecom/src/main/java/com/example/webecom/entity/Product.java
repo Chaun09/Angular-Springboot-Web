@@ -21,7 +21,6 @@ public class Product {
     private Float price;
     @NotNull
     private Integer quantity;
-
     private String description;
     private String file_pic;
     @NotNull
